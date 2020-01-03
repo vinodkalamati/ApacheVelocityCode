@@ -1,0 +1,41 @@
+<html>
+<body>
+
+    #set( $a = "Velocity" )
+
+<p>My name is</p> <b>$name</b>
+
+<p>my profession is</p> <i>$profession</i>
+<p>
+    my age is: $age
+
+    $customer.firstname
+
+    <br>
+    $customer.name
+    $attribute_value
+
+    #foreach( $t in $template_name)
+        * $t
+    #end
+
+<h2>
+    $template_name.size()
+</h2>
+
+<h1>
+    #if( $name == $firstname)it's true!#{else}it's not!#end
+
+</h1>
+
+<h1>
+    #if( $lastname == $firstname)it's true!#{else}it's not!#end
+
+</h1>
+
+<p>
+    $a
+</p>
+</p>
+</body>
+</html>
